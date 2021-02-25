@@ -15,3 +15,11 @@ print (mylist[-2], mylist[1], mylist[:3], mylist[3:])
 if "chips" in mylist:
     print("I got 'chips' in snacks")
 
+# change item value 
+mylist[-1] = "jam"
+print(mylist)
+
+#changing the range of item 
+mylist [:2] = ["jelly", "fish"]
+print(mylist)
+
