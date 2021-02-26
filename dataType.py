@@ -23,3 +23,43 @@ print(mylist)
 mylist [:2] = ["jelly", "fish"]
 print(mylist)
 
+#insert
+mylist.insert(2, "Veggi")
+print(mylist)
+
+#add item end of list append
+mylist.append("pare")
+print(mylist)
+
+# to extend the list 
+mylist.extend(newlist)
+print(mylist)
+
+# remove specificitem and pop(), del[] specific index
+mylist.remove("fish")
+mylist.pop(0)
+del mylist[-2]
+print (mylist)
+
+#loop
+for x in  range(len(newlist)):
+    print(newlist[x])
+
+# # loop for
+[print(x) for x in mylist]
+
+# all p in one list with for look
+allPlist = []
+for x in mylist:
+    if 'p' in x:
+        allPlist.append(x)
+print(allPlist)
+
+# similarly in one line 
+
+allPlist = [x for x in mylist if 'i' in x]
+print(allPlist)
+
+# sort list
+mylist.sort(key = str.lower)
+print(mylist)
