@@ -5,6 +5,6 @@ Only for practice and some refresh
     - Allows duplicate members, collection is ordered ---> List, Tuple
     - No duplicate Members -----> Set, Dictionary
 
-    List ["changable", "order",  "allows duplcate values" ]
-    Tuple ("unchangable", "order",  "allows duplcate values")
+    List ["changable", "order",  "allows duplcate values" ] \n
+    Tuple ("unchangable", "order",  "allows duplcate values") \n 
     Set {unordered, unindexed, unchangable}
