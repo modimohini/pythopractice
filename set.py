@@ -35,3 +35,5 @@ print(myset) """
 myset.intersection_update(workset)
 print(myset)
 
+def greeting(name):
+  print("Hello, " + name)

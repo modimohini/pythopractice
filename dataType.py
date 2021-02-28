@@ -63,3 +63,9 @@ print(allPlist)
 # sort list
 mylist.sort(key = str.lower)
 print(mylist)
+
+m = len(mylist)
+print(m)
+
+i = mylist.index("pan")
+print(i)

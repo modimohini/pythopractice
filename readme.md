@@ -8,3 +8,4 @@ Only for practice and some refresh
     List ["changable", "order",  "allows duplcate values" ] 
     Tuple ("unchangable", "order",  "allows duplcate values") 
     Set {unordered, unindexed, unchangable}
+    Dictionary {ordered*, changeable and does not allow duplicates}
