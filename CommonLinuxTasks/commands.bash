@@ -6,17 +6,11 @@
 # delete folder
 ls
 # First Column − Represents the file type and the permission given on the file. Below is the description of all type of files.
-
 # Second Column − Represents the number of memory blocks taken by the file or directory.
-
 # Third Column − Represents the owner of the file. This is the Unix user who created this file.
-
 # Fourth Column − Represents the group of the owner. Every Unix user will have an associated group.
-
 # Fifth Column − Represents the file size in bytes.
-
 # Sixth Column − Represents the date and the time when this file was created or modified for the last time.
-
 # Seventh Column − Represents the file or the directory name.
 #file manupulation 
 pwd
@@ -53,11 +47,65 @@ ZZ (cap) -- Save and exit
 :wq -- save and exit
 
 # to view file 
-cat <filename>
+cat <filename> | less #or |more
 less <filename>
-head <filename>
-tail <filename>
+head -2 <filename> # no of lines -2
+tail -3 <filename> # no of lines -3
+sort <filename> # sort alphabetically 
+nl <filenam> # number the lines in file 
+nl -s '.' -w 30 <filename> # . is for number '1. ' and -w is the width from margin as w -30
 
 # Wildcards
+* - represents zero or more characters
+? - represents a single character
+[] - represents a range of characters
 
+
+# grep
+cat <filename> | grep lemon   # we will get 'lemon' from the file  
+cat newfile | grep -i a       # we get all list containing letter 'a'  -i match both (upper and lower) case
+cat newfile | grep -v a   # shows all the lies that do not match the serch string 
+cat newfile | grep -c ben     # display count of matching lines
+cat newfile | grep -n         # matching line and its number 
+cat newfile | grep -l         # shows name of the file with string 
+
+# sort 
+sort newfile                   # -r --> revverse sorting, -n --> sorts numerically, -f --> case insensitive sorting 
+sort -r newfile
+cat newfile | grep -v a | sort -r 
+
+# permissions 
+ls -l <path>
+
+# process managemtn 
+top 
+top -m
+jobs
+ps f
+ps <pid> # status of single process running 
+
+# kill
+kill -15 [pid]  <-  sends sigterm  --> file is sometime backup
+kill     [pid]  <-  sends sigterm
+kill  -2 [pid]  <-  sends sigint
+kill  -1 [pid]  <-  sends sigup
+kill  -9 [pid]  <-  sends sigkill  --> it kill at that moment (dirty shutdown, file may get corropted, +ve help to kill bad process)
+
+
+# setting up cron job
+crontab -l  # listcurrent cron jobs 
+conntab -e  # edit cron job 
+
+min (0 - 59)
+| hr (0 - 23)
+| | day of month (1 - 31)
+| | | month(1 - 12)
+| | | | day of the week (0 - 6) __ Sun - Sat, 7 is Sunday on some sys
+| | | | |
+* * * * * <job name>
+
+* * * * * echo 'hey' >> /temp/demo.txt
+
+
+# regular expressions tr sed vi grep
 
