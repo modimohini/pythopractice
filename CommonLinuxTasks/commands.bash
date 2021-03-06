@@ -108,4 +108,20 @@ min (0 - 59)
 
 
 # regular expressions tr sed vi grep
+cat newfile | grep ^a | grep t$    # ^ (carrot) will filter everthing with string starting with 'a' and '$' will filter anything that ends with 't'
+
+# interval regular expression
+{n}     --> matches preceding char appering 'n' times exactly 
+{n.m}   --> matches preceding char appering 'n' times but not more than 'm'
+{n, }   --> matches preceding char only when it appears 'n' times or more
+\+      --> matches 1 or more occurence of previous char
+\?      --> matches zero or one occurence of previous char
+.       --> replace any character
+^       --> start of string
+$       --> matches end of string
+
+cat newfile | grep -E p\{2}  # -E is regular expression 
+cat newfile | grep "a\+t"    # filter to anything ending with 'at'
+
+
 

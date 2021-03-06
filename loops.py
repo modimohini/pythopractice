@@ -11,6 +11,8 @@ def my_simplefunction():
         print("a > b") 
 
  # to print
+
+ 
 def my_whileLoop():
     i = 1
     a = int(input("how many number you want, your val? "))
@@ -19,4 +21,5 @@ def my_whileLoop():
         i += 1 
         
 my_whileLoop()
+
 

@@ -5,6 +5,6 @@ def myFunction() :
     print (1 != 9)
     return True
 
-#print(myFunction())
+print(myFunction())
 
 
