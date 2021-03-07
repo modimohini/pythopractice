@@ -40,7 +40,7 @@ def areBracketsBalanced(expr):
   
 # Driver Code 
 if __name__ == "__main__": 
-    expr = "{()}[{}}"
+    expr = "{(}[{}}"
   
     # Function call 
     if areBracketsBalanced(expr): 

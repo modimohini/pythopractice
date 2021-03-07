@@ -1,3 +1,4 @@
+# this version of rps check for invlid input 
 import random
 select = ['r' , 'p' , 's']
 comp = random.choice(select)
@@ -19,7 +20,7 @@ player1 = input("You type one from the list (r, p, s), tell me? " )
                 else:
                     print("comp win with " + comp)
             else:
-                print("invalid")
+                print("invalid input :( ")
 
     
 
