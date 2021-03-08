@@ -27,7 +27,7 @@ def insertsort():
                 print(a)        # [9,9] 
                 a[i] = value    # a[0] = 1                     --> shift value left into slot i
                 print(a)        # [1,9]
-                #i = i - 1
+                i = i - 1
                 print(i)
             else:
                 break 
