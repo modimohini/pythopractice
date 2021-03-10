@@ -4,7 +4,7 @@ mydict = {
   "device type": "Ice-Mixer",
   "year": 1964,
   "year": 2021,  # dictionary cannot have two items with same key
-  "year of make": 1964,
+  "year of make": 2021,
   "colors": ["red", "white", "blue"],
    "electric": False
 }

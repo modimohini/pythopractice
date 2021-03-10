@@ -74,7 +74,7 @@ sort newfile                   # -r --> revverse sorting, -n --> sorts numerical
 sort -r newfile
 cat newfile | grep -v a | sort -r 
 
-# permissions 
+# to check permissions -l
 ls -l <path>
 
 # process managemtn 
