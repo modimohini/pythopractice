@@ -16,6 +16,6 @@ print(Counter(('x','y','z','x','x','x','y', 'z'))) #using tuple
 
 words_list = ['Cat', 'Dog', 'Horse', 'Dog']
 counter = Counter(words_list)
-print(counter)
+print(counter) > out.txt
 
 print(Counter(words_list))
