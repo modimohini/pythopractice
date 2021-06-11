@@ -8,8 +8,6 @@
 #expr = "[([]{})]"  #balance
 expr = "[([]{})]["  # unbalance
 
-
-
 var = ['(','[','{'] 
 s = [] #list 
 l = len(s)
