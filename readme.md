@@ -11,3 +11,17 @@ Only for practice and some refresh
     Dictionary {"ordered", "changeable and does not allow duplicates"}
 
 
+Git clone <to clone the repo-project>
+Git branch <create_new_branch> 
+Git checkout -b "new_branch_name"
+Git checkout <branch_name_you_want_to_switch>
+Git status
+Git add <file_name>
+Git add --all
+Git commit -m "your msg"
+Git push 
+Git log
+git checkout master
+git pull
+git merge master
+Git diff  
