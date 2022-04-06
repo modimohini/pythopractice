@@ -5,8 +5,8 @@
 
 
 #expr = "[())]" #IndexError: list index out of range
-#expr = "[([]{})]"  #balance
-expr = "[([]{})]["  # unbalance
+expr = "[([]{})]"  #balance
+#expr = "[([]{})]["  # unbalance
 
 var = ['(','[','{'] 
 s = [] #list 
@@ -32,14 +32,13 @@ def balanceEx():
             return False
         
                        
-balanceEx()
 
-
-
-if not s:
-    print("balance")
-else:
-    print("not balance")
+if __name__ == '__main__':
+    balanceEx()
+    if not s:
+        print("balance")
+    else:
+        print("not balance")
 
 ## by Mohini Modi
 ## 3/6/2021

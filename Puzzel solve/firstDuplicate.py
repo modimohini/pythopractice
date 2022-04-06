@@ -18,7 +18,7 @@ def firstDup(a):
             print('-1')
             
 
-a = [1,2,3,8,5,1]
+a = [1,2,3,8,5,3]
 firstDup(a)
 
 
